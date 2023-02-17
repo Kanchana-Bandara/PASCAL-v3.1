@@ -1,0 +1,8 @@
+gfortran -c mod_importfile.f95
+gfortran -c mod_randomnum.f95
+gfortran -c mod_simulation.f95
+gfortran -c mod_csv_file.f95
+gfortran -c IBSM1D_v1.f95
+gfortran IBSM1D_v1.o mod_importfile.o mod_randomnum.o mod_simulation.o mod_csv_file.o -o testrun.exe
+
+
